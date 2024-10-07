@@ -1,70 +1,94 @@
-# Getting Started with Create React App
+# MazeQuest
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**MazeQuest** is an interactive maze-solving visualizer built with **React** and **Tailwind CSS**. It supports various pathfinding algorithms such as **Dijkstra**, **Breadth-First Search (BFS)**, **Depth-First Search (DFS)**, and **A***. Users can create custom mazes on an interactive grid and visualize how these algorithms solve the maze step-by-step, along with detailed pseudocode for educational purposes.
 
-## Available Scripts
+## Table of Contents
+- [Demo](#demo)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Technologies Used](#technologies-used)
+- [Pathfinding Algorithms](#pathfinding-algorithms)
+- [Challenges Faced](#challenges-faced)
+- [Future Enhancements](#future-enhancements)
+- [Contributing](#contributing)
+- [License](#license)
 
-In the project directory, you can run:
+## Demo
+Check out the live demo of MazeQuest [here](#).
 
-### `npm start`
+## Features
+- **Interactive Grid**: Users can create their own mazes by adding walls, start points, and end points.
+- **Algorithm Visualizations**: Visualize multiple pathfinding algorithms including:
+  - **Dijkstra's Algorithm**
+  - **Breadth-First Search (BFS)**
+  - **Depth-First Search (DFS)**
+  - **A*** (A-Star)
+- **Pseudocode Display**: For each algorithm, view the corresponding pseudocode to understand how it works.
+- **Smooth Animations**: Pathfinding animations are optimized for performance and smoothness.
+- **Reset and Replay**: Easily reset the maze or replay the algorithm on the same maze.
+  
+## Installation
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/Durvesh7k/MazeQuest.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd MazeQuest
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Start the development server:
+   ```bash
+   npm start
+   ```
+   The app will be available at [http://localhost:3000](http://localhost:3000).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Usage
+- **Creating a Maze**: Use the grid to click and place walls, start, and end points.
+- **Select an Algorithm**: Choose a pathfinding algorithm from the dropdown menu.
+- **Start Visualization**: Click the "Visualize" button to start the animation and see the algorithm in action.
+- **Pseudocode**: Follow along with the algorithm by viewing the pseudocode that gets updated with each step.
+  
+## Technologies Used
+- **React**: For building the user interface.
+- **JavaScript**: Core programming logic.
+- **Tailwind CSS**: For styling and responsive design.
+- **CSS Animations**: To visualize the maze-solving process.
+- **React State Management**: To handle the grid interactions and algorithm states.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Pathfinding Algorithms
+### Dijkstra's Algorithm
+A weighted shortest path algorithm that explores all possible paths and guarantees finding the shortest one.
 
-### `npm test`
+### Breadth-First Search (BFS)
+An unweighted pathfinding algorithm that explores all nodes at the present "depth" before moving on to nodes at the next depth level.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Depth-First Search (DFS)
+An algorithm that explores as far as possible along each branch before backtracking.
 
-### `npm run build`
+### A* Search (A-Star)
+An advanced weighted algorithm that uses heuristics to find the most promising path towards the goal.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Challenges Faced
+- **Optimizing Animation Performance**: Ensuring the smooth rendering of maze-solving animations without lag or delays was a significant challenge.
+- **Algorithm Visualization**: It was important to make the step-by-step execution of algorithms clear to users while synchronizing the pseudocode display with the actual animation.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Future Enhancements
+- **Customizable Grid Sizes**: Allow users to change the size of the grid dynamically.
+- **Algorithm Speed Controls**: Add controls for speeding up or slowing down the visualization.
+- **Maze Generation**: Implement automated maze-generation algorithms like recursive backtracking.
+- **Mobile Support**: Improve the design for better mobile responsiveness.
+  
+## Contributing
+Contributions are welcome! Feel free to fork this repository and submit a pull request.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This README provides a solid foundation for your project. Let me know if you'd like to add more specific sections or details!
